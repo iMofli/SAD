@@ -51,12 +51,12 @@ public class EditableBufferedReader extends BufferedReader {
         
     }
     /*
-     * Cursor Right -> ESC [ C
-     * Cursor Left -> ESC [ D      ^[[D
+     * DRETA -> ESC [ C
+     * ESQUERRA -> ESC [ D      ^[[D
      * HOME -> ESC [ H
      * END -> ESC [ F
      * INSERT -> ESC [ 2 ~
-     * SUPR -> ESC [ 3 ~
+     * DELETE -> ESC [ 3 ~
      *
      */
     public int read() throws IOException {
