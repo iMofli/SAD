@@ -1,0 +1,193 @@
+body{
+    color:black;
+    display: flex;
+    font-family: 'Source Sans Pro','Folks','Roboto',Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #A6A6A6;
+    
+}
+.contenedor{
+    background:#FFF;
+    margin: auto;
+    padding:25px;
+    border-radius: 15px;
+    justify-content: start;
+    align-items: center;
+    box-shadow: 0px 0px 10px #000;
+    /*width: 40%;*/
+    
+}
+h1{
+    font-family: 'Folks',Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: skyblue;
+}
+h1 .tac{
+    color: #E8BA63;
+}
+.turn{
+    margin:auto;
+    margin-bottom: 20px;
+    margin-top: -20px;
+    font-size: 30px;
+    
+}
+.img{
+    height: 20px;
+    width: 20px;
+}
+
+.turn .turn2{
+    display: none;
+}
+.turn .turn1{
+    display: block;
+}
+table{
+    position: relative;
+    table-layout: fixed;
+    cursor: pointer;
+    height: 400px;
+    width: 400px;
+   
+    font-size: 0px;
+    border-collapse: collapse;
+    
+    /*border: 5px solid #000;*/
+}
+
+td{
+    border: 6px solid #A6A6A6;
+    border-spacing: 100px;
+    /*border-radius: 10%;*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+    
+   
+    
+}
+td:nth-of-type(1){
+    border-left-color: transparent;
+    border-top-color: transparent;
+    
+    
+}
+td:nth-of-type(2){
+    border-top-color: transparent;
+}
+td:nth-of-type(3){
+    border-top-color: transparent;
+    border-right-color: transparent;
+}
+tr:nth-of-type(3) td{
+    border-bottom-color: transparent;
+}
+
+.endgame{
+    display:none;
+    width: 30.8%;
+    background-color: #000;
+    opacity: 80%;
+    top:266px;
+    position: absolute;
+    margin-left: -25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+    font-size: 2 em;
+    color: #FFF;
+}
+.endgame #replay{
+    display: block;
+    font-size: 15px;
+}
+
+button{
+    /*padding: 5px;*/
+    height:50px;
+    cursor: pointer;
+    
+}
+.scores{
+    display: flex;
+    justify-content: space-around;
+    
+    /*font-weight: 500%;*/
+}
+.scores .jugador1 .x{
+
+    display:inline-block;
+    height: 15px;
+    width: 15px;
+    /*padding:2px*/
+}
+.scores .jugador2 .oo{ 
+    display:inline-block;
+    height: 15px;
+    width: 15px;
+    /*padding:2px*/
+}
+.scores #p2,#p1, #ties{
+    display: block;
+}
+.tie {
+    position: absolute;
+}
+.jugador1{
+    position: absolute;
+    margin-left: -250px;
+}
+.jugador2{
+    position: absolute;
+    margin-left: 250px;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    font-size: 10px;
+    align-items: center;
+}
+.buttons #playAgain{
+    justify-content: center;
+    align-items: center;
+   
+}
+.buttons #swapMode{
+    cursor: pointer;
+    align-items: center;
+    justify-self: center;
+}
+.buttons #EasyMode{
+    display: block;
+}
+.buttons #DifficultMode{
+    display: none;
+
+}
+.buttons #Multiplayer{
+    
+    display: none;
+}
+.buttons #HardMode{
+    display: none;
+
+}
+.swapMode{
+    height: 82px;
+    width: 49px;
+    max-width: 49px;
+    max-height: 82px;
+    cursor: pointer;
+}
+.footer {
+    border: 5px solid red;
+    width: 100%;
+    justify-content: center;
+    height: 81px;
+    position: absolute;
+    margin-top:50px;
+    bottom: 0;
+    left: 0;
+}

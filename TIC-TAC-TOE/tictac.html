@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>TIC-TAC-TOE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="web.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <div class="contenedor" id="contenedor" align="center">
+        
+        <h1>TIC <span class="tac">TAC</span> TOE</h1>
+        <div class="turn">
+            <div class="turn1"><img class="img" src="x.svg" alt=""> Turn</div>
+            <div class="turn2"><img class="img" src="circulo.svg" alt=""> Turn</div>
+        </div>
+        
+        
+       
+        <table id="tablero" class="tablero">
+            <tr>
+                <td>0,0</td>
+                <td>0,1</td>
+                <td>0,2</td>
+            </tr>
+            <tr>
+                <td>1,0</td>
+                <td>1,1</td>
+                <td>1,2</td>
+            </tr>
+            <tr>
+                <td>2,0</td>
+                <td>2,1</td>
+                <td>2,2</td>
+            </tr>
+
+        </table>
+        <div class="endgame">
+            <div class="text"><span id="text">Player Wins!</span><span id="replay">Press here to play again</span></div>
+        </div>
+        
+        <div class="scores">
+            <p class="jugador1"><span class="x"><span class="xx"><img class="x" src="x.svg"></span></span> JUGADOR 1<span id="p1">0</span></p>
+            <p class="tie">-<span id="ties">0</span></p>
+            <p class="jugador2"><span class="oo"><img class="o" src="circulo.svg" alt=""></span><span id="j2"> EASY AI</span><span id="p2">0</span></p>
+        </div>
+        <div class="buttons">
+            <div class="swapMode">
+                <p id="EasyMode"><img class="profile" src="user.svg" alt="Profile user">Easy mode</p>
+                <p id="DifficultMode"><img class="profile" src="user.svg" alt="Profile user">Difficult mode</p>
+                <p id="Multiplayer"><img class="profile" src="friends.svg" alt="Profile user">Multiplayer mode</p>
+                <p id="HardMode"><img class="profile" src="user.svg" alt="Profile user">Unbeatable mode</p> 
+            </div>
+        </div>
+    
+    </div>
+
+   
+    <script language="Javascript" type="text/Javascript" src="/js/game.js"></script>
+</body>
+
+</html>
